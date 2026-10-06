@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Lunara</title>
+		<link rel="stylesheet" href="/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta name="robots" content="noindex" />
+	</head>
+
+	<body class="app">
+		<div id="backdrop" aria-hidden="true"></div>
+		<nav id="dock" class="dock" aria-label="Dock"></nav>
+
+		<div class="shell">
+			<header class="topbar">
+				<div id="tabs" class="tabs" role="tablist"></div>
+
+				<div class="toolbar">
+					<button
+						id="back"
+						class="icon-button"
+						type="button"
+						aria-label="Back"
+						title="Back"
+					></button>
+					<button
+						id="forward"
+						class="icon-button"
+						type="button"
+						aria-label="Forward"
+						title="Forward"
+					></button>
+					<button
+						id="reload"
+						class="icon-button"
+						type="button"
+						aria-label="Reload"
+						title="Reload"
+					></button>
+
+					<form id="omnibox" class="omnibox" role="search">
+						<span class="omnibox__icon" id="omnibox-icon"></span>
+						<input
+							id="address"
+							type="text"
+							name="address"
+							placeholder="Search or enter address"
+							autocomplete="off"
+							autocapitalize="off"
+							spellcheck="false"
+							enterkeyhint="go"
+							aria-label="Address"
+						/>
+					</form>
+
+					<button
+						id="coins"
+						class="coins"
+						type="button"
+						aria-label="Lunara coins"
+					>
+						<span data-amount>0</span>
+					</button>
+
+					<button
+						id="bookmark"
+						class="icon-button"
+						type="button"
+						aria-label="Bookmark"
+						title="Bookmark"
+						aria-pressed="false"
+					></button>
+				</div>
+			</header>
+
+			<main id="frames" class="frames"></main>
+		</div>
+
+		<p id="status" class="status" role="status" hidden></p>
+
+		<script type="module" src="/js/app.js"></script>
+	</body>
+</html>
