@@ -13,6 +13,24 @@
 * Music
 * Movies
 * Chatroom
+* Custom Backgrounds
 * So much more!
 
 # Self Hosting
+
+Lunara is simple to self host
+
+```sh
+# clone the repo
+git clone https://github.com/yaansyaans/lunara
+
+# enter directory
+cd lunara
+
+npm install      # Simple NodeJS Install script
+node server.js   # NodeJS server command
+```
+
+# Forking
+
+If you for this Repo, please consider staring it!
