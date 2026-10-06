@@ -1,4 +1,4 @@
-<h1 align="center">Lunara<h1>
+# Lunara
 
 ![Lunara](github/Screenshot.png)
 
